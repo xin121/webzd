@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html >
+
+	<head >
+		<meta charset="UTF-8">
+		<meta name="description" content="智豆科技为客户提供了涵盖智能医疗、智能物流、人工智能和智慧出行等多个行业高效、便捷的智能化解决方案。"/>
+		<meta name="keywords" content="智能医疗，智能家居，智能物流，人工智能，智慧出行，智慧屏，智能化，智能硬件服务商， 智能场景，智能饮水机，空气净化器，智能仓储，智能翻译机，智能机器人，手持智能扫码枪，儿童手表，共享单车。"/>
+		<title>解决方案-智豆科技，提供智能医疗、智能物流等行业的智能化解决方案。</title>
+		<link rel="icon" href="../favicon.ico">
+		<link rel="stylesheet" href="../css/animate.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+	
+	</head>
+
+	<body >
+		<div class="header ">
+			<div class="headNav min_width">
+				<div class="logo">
+					<img data-original="../img/logo.png" />
+					<span>智豆科技</span>
+				</div>
+				<div class="nav">
+					<ul>
+						<li>
+							<a class="title" href="../index.html"><span>首页</span></a>
+						</li>
+						<li class="">
+							<a class="title" href="../product/product.html">
+								<span>产品与服务</span></a>
+							<!--<ul class="sub_nav">
+								<li>
+									<a class="sub_title"><span>解决方案</span></a>
+									<a class="sub_title"><span>解决方案</span></a>
+								</li>
+							</ul>-->
+						</li>
+						<li>
+							<a class="title nav_active"><span>解决方案</span></a>
+							<!--<ul class="sub_nav ">
+								<li>
+									<a class="sub_title"><span>解决方案</span></a>
+									<a class="sub_title"><span>解决方案</span></a>
+								</li>
+							</ul>-->
+						</li>
+						<li>
+							<a class="title " href="../about.html"><span>关于我们</span></a>
+						</li>
+					</ul>
+				</div>
+				<a class="mos" target="_blank" href="http://www.zdmos.com">
+					<span>魔石云</span>
+				</a>
+			</div>
+		</div>
+		<div class="proabnner">
+			<div class="probnnerbg">
+				<img data-original="../img/project/banner.png" />
+			</div>
+			<div class="warp">
+				<div class="bannerText">
+					<h1 style="font-size: 36px;margin-bottom: 20px;">魔石云</h1>
+					<h1>为您提供“智能联网化”一站式快速开发</h1>
+					<a target="_blank" href="http://www.zdmos.com">了解更多</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="loadNav proBg" >
+			<div class="warp">
+				<ul class="clearfix">
+					<li class="active">
+						<a href="#medical.html">
+							智慧医疗</a>
+					</li>
+					<li>
+						<a href="#house.html">智能家居</a>
+					</li>
+					<li>
+						<a href="#logistics.html">智能物流</a>
+					</li>
+					<li>
+						<a href="#artificial.html">人工智能</a>
+					</li>
+					<li>
+						<a href="#message.html">智慧出行</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div id="loadMain">
+
+		</div>
+		<div class="footer">
+			<div class="warp">
+				<ul style="width: 250px;">
+					<li>友情链接：</li>
+					<li style="margin-top: 10px;">
+						<a target="_blank" href="http://www.zdmos.com">魔石云服务平台</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://shop517740027.taobao.com">在线购买（淘宝旗舰店）</a>
+					</li>
+				</ul>
+				<ul>
+					<li>杭州智豆科技有限公司</li>
+					<li>联系电话：<span class="border">0571-28178475</span></li>
+					<li>邮箱：market@zhidoulink.com</li>
+					<li>公司地址：杭州市拱墅区祥园路99号<br />运河广告产业园2号楼1002室</li>
+				</ul>
+				<ul style="text-align: center;">
+					<li class="codeImg Left" style="margin-right: 50px;">
+						<img data-original="../img/code1.jpg" />
+						<p>微信公众号</p>
+					</li>
+					<li class="codeImg Left">
+						<img data-original="../img/code2.jpg" />
+						<p>淘宝网店</p>
+					</li>
+				</ul>
+			</div>
+			<div class="beizhu">
+				<p>Copyright &copy; <span>2016</span>杭州智豆科技有限公司版权所有保留一切权利 |
+					<a href="http://www.miitbeian.gov.cn" target="_blank">浙ICP备16013992号-1</a>
+				</p>
+			</div>
+		</div>
+		<div class="toTop">
+			<ul>
+				<!--<li></li>
+				<li>APP</li>-->
+				<li class="srcTop">TOP</li>
+			</ul>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="../js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery.lazyload.min.js" ></script>
+<script type="text/javascript" src="../js/public.js"></script>
+<script>
+	var chanUrl = 'medical.html';
+	window.common_conf = {
+		defaultHash: chanUrl,
+		baseURL: ''
+	};
+	$('body').on('click', '.hdUl li', function() {
+		$(this).addClass('cur').siblings().removeClass('cur');
+		var index = $('.hdUl li').index(this);
+		$('.bd .bdList').eq(index).fadeIn().siblings().hide();
+	})
+	$(function(){
+		var userAgent = navigator.userAgent;
+		if (userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") < 0) {
+	        $('body').css({'position':'absolute','top':'0','width':'100%'})
+	    } 
+	})
+</script>
+<script type="text/javascript" src="../js/load.js"></script>
